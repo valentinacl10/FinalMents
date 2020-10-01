@@ -74,6 +74,7 @@ public class FifthFragment extends Fragment {
 
             }
 
+            
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
