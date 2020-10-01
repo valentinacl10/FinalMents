@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">AppMents</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Mi gente linda</string>
+    <string name="hello_second_fragment">Mi gente de pueblo</string>
+    <string name="P1">Tiempo en el quirofano</string>
+    <string name="P2">Tiempo Hospitalización</string>
+    <string name="P3">UCI PO</string>
+    <string name="P4">Pérdida sanguínea</string>
+    <string name="P5">Personas equipo quirúrgico</string>
+    <string name="P6">Intubación (%)</string>
+    <string name="P7">Sitio quirúrgico</string>
+    <string name="Titulo_P2">Procedimiento quirúrgico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Titulo_P3">Factores asociados a la enfermedad</string>
+    <string name="anterior">Anterior</string>
+    <string name="siguiente">SIGUIENTE</string>
+    <string name="P21">Efectividad manejo no quirúrgico</string>
+    <string name="P22">Disponibilidad manejo no quirúrgico</string>
+    <string name="P23">Impacto enfermedad tras 2 semanas</string>
+    <string name="P24">Impacto dificultad tras 2 semanas</string>
+    <string name="P25">Impacto enfermedad tras 6 semanas</string>
+    <string name="P26">Impacto dificultad tras 6 semanas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="Titulo_P4">Factores asociados al paciente</string>
+    <string name="P31">Edad</string>
+    <string name="P32">Enfermedad Pulmonar</string>
+    <string name="P33">Apnea obstructiva del sueño</string>
+    <string name="P34">Enfermedad Cardiovascular</string>
+    <string name="P35">Diabetes</string>
+    <string name="P36">Inmunocompromiso</string>
+    <string name="P37">Enfermedad similar influenza</string>
+    <string name="P38">Exposición reciente a pacientes COVID</string>
+    <string name="finalizar">Finalizar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
