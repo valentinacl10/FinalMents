@@ -84,12 +84,15 @@
         android:id="@+id/titulo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
         android:text="@string/Titulo_P3"
-        app:layout_constraintBottom_toTopOf="@+id/text21"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
 
     <TextView
         android:id="@+id/text22"
@@ -170,13 +173,12 @@
         android:layout_width="154dp"
         android:layout_height="16dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
         android:text="   1       2      3       4      5"
         app:layout_constraintBottom_toTopOf="@+id/seekbarP21"
         app:layout_constraintEnd_toEndOf="@+id/seekbarP21"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/seekbarP21"
-        app:layout_constraintTop_toBottomOf="@+id/titulo2"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintStart_toStartOf="@+id/seekbarP21" />
 
     <Button
         android:id="@+id/button3_siguiente"
@@ -197,4 +199,66 @@
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/F1DA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP22"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text21"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <ImageButton
+        android:id="@+id/F2DA"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP21"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text22"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <ImageButton
+        android:id="@+id/F3DA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP23"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text23"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <ImageButton
+        android:id="@+id/F4DA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP24"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text24"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <ImageButton
+        android:id="@+id/F5DA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP25"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text25"
+        tools:layout_editor_absoluteY="523dp" />
+
+    <ImageButton
+        android:id="@+id/F6DA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP26"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text26"
+        tools:layout_editor_absoluteY="596dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

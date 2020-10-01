@@ -1,5 +1,7 @@
 package com.example.appments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -228,6 +230,186 @@ public class FourthFragment extends Fragment {
 
             }
         });
+
+        view.findViewById(R.id.F1PA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor1 = new AlertDialog.Builder(getContext());
+                factor1.setMessage("1: <20 \n 2: 21-40 \n 3: 41-50 \n 4: 51-65 \n 5 > 65")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor1.create();
+                titulo.setTitle("Edad");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F2PA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor2 = new AlertDialog.Builder(getContext());
+                factor2.setMessage("1: Ninguna \n 2: - \n 3: - \n 4: Mínima \n 5: > Mínima")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor2.create();
+                titulo.setTitle("Enfermedad pulmonar");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F3PA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor3 = new AlertDialog.Builder(getContext());
+                factor3.setMessage("CPAP: presión positiva continua en la vía aérea \n" +
+                        "1: No presente \n 2: - \n 3: - \n 4: Moderada (No CPAP) \n 5: En CPAP")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor3.create();
+                titulo.setTitle("Apnea obstructiva del sueño");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F4PA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor4 = new AlertDialog.Builder(getContext());
+                factor4.setMessage("1: Ninguna \n 2: Mínima (no medicamentos) \n 3: Leve (1 medicamento) \n 4: Moderada (2 medicamentos) \n" +
+                        "5: Severa (>3 medicamentos)")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor4.create();
+                titulo.setTitle("Enfermedad cardiovascular");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F5PA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor5 = new AlertDialog.Builder(getContext());
+                factor5.setMessage("1: No \n" +
+                        "2: - \n 3: Moderada (no medicamentos) \n" +
+                        "4: Moderada (medicina oral) \n" +
+                        "5: > Moderada (insulina)")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor5.create();
+                titulo.setTitle("Diabetes");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F6PA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor6 = new AlertDialog.Builder(getContext());
+                factor6.setMessage("1: No \n" +
+                        "2: - \n" +
+                        "3: - \n" +
+                        "4: Moderado \n" +
+                        "5: Severo")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor6.create();
+                titulo.setTitle("Inmunocomprometido/a");
+                titulo.show();
+
+            }
+
+        });
+        view.findViewById(R.id.F7PA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor6 = new AlertDialog.Builder(getContext());
+                factor6.setMessage("1: No \n 2: - \n 3: - \n 4: - \n 5: Si")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor6.create();
+                titulo.setTitle("Síntomas de influenza");
+                titulo.show();
+
+            }
+
+        });
+        view.findViewById(R.id.F8PA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor6 = new AlertDialog.Builder(getContext());
+                factor6.setMessage("1: No \n" +
+                        "2: Poblablemente no \n" +
+                        "3: Posiblemente \n" +
+                        "4: Probablemente \n" +
+                        "5: Si")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor6.create();
+                titulo.setTitle("Expuesto a paciente COVID-19 positivo");
+                titulo.show();
+
+            }
+
+        });
+
     }
 
 

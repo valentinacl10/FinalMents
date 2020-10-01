@@ -1,5 +1,7 @@
 package com.example.appments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -188,6 +190,155 @@ public class ThirdFragment extends Fragment {
             public void onStopTrackingTouch(SeekBar seekBar) {
 
             }
+        });
+        view.findViewById(R.id.F1DA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor1 = new AlertDialog.Builder(getContext());
+                factor1.setMessage("1: No disponible \n" +
+                        "2: Disponible, 40% efectivo como la cirugía \n" +
+                        "3: Disponible, 40% a 60% efectivo como la cirugía, \n" +
+                        "4: Disponible, 61% a 95% efectivo como la cirugía \n" +
+                        "5: Disponible, igualmente efectivo")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor1.create();
+                titulo.setTitle("Efectividad de la opción de tratamiento no quirúrgico ");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F2DA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor2 = new AlertDialog.Builder(getContext());
+                factor2.setMessage("1: Significativamente peor/no aplica \n" +
+                        "2: Algo peor \n" +
+                        "3: Equivalente \n" +
+                        "4: Algo mejor \n" +
+                        "5: Significativamente mejor")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor2.create();
+                titulo.setTitle("Riesgo de exposición de la opción de tratamiento no quirúrgico");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F3DA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor3 = new AlertDialog.Builder(getContext());
+                factor3.setMessage("1: Significativamente peor \n" +
+                        "2: Peor \n" +
+                        "3: Moderadamente peor \n" +
+                        "4: Un poco peor \n" +
+                        "5: No es peor")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor3.create();
+                titulo.setTitle("Impacto de un retraso de 2 semanas en el resultado de la enfermedad");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F4PQ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor4 = new AlertDialog.Builder(getContext());
+                factor4.setMessage("1: Significativamente peor \n" +
+                        "2: Peor \n" +
+                        "3: Moderadamente peor \n" +
+                        "4: Un poco peor \n" +
+                        "5: No es peor")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor4.create();
+                titulo.setTitle("Impacto de un retraso de 2 semanas en la dificultad/riesgo de la cirugía");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F5DA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor5 = new AlertDialog.Builder(getContext());
+                factor5.setMessage("1: Significativamente peor \n" +
+                        "2: Peor \n" +
+                        "3: Moderadamente peor \n" +
+                        "4: Un poco peor \n" +
+                        "5: No es peor")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor5.create();
+                titulo.setTitle("Impacto de un retraso de 6 semanas en el resultado de la enfermedad");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F6DA).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor6 = new AlertDialog.Builder(getContext());
+                factor6.setMessage("1: Significativamente peor \n" +
+                        "2: Peor \n" +
+                        "3: Moderadamente peor \n" +
+                        "4: Un poco peor \n" +
+                        "5: No es peor")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor6.create();
+                titulo.setTitle("Impacto de un retraso de 6 semanas en la dificultad/riesgo de la cirugía");
+                titulo.show();
+
+            }
+
         });
 
     }

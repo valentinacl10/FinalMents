@@ -11,7 +11,7 @@
         android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="36dp"
         android:layout_marginBottom="24dp"
         android:text="@string/P36"
         app:layout_constraintBottom_toTopOf="@+id/text4"
@@ -104,7 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="28dp"
         android:text="@string/P31"
         app:layout_constraintBottom_toTopOf="@+id/text22"
         app:layout_constraintStart_toStartOf="parent" />
@@ -128,19 +128,22 @@
         android:id="@+id/titulo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="536dp"
         android:text="@string/Titulo_P4"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
 
     <TextView
         android:id="@+id/text22"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="12dp"
         android:text="@string/P32"
         app:layout_constraintBottom_toTopOf="@+id/text23"
         app:layout_constraintStart_toStartOf="parent" />
@@ -214,13 +217,12 @@
         android:layout_width="154dp"
         android:layout_height="16dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
         android:text="   1       2      3       4      5"
         app:layout_constraintBottom_toTopOf="@+id/seekbarP31"
         app:layout_constraintEnd_toEndOf="@+id/seekbarP31"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/seekbarP31"
-        app:layout_constraintTop_toBottomOf="@+id/titulo2"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="@+id/seekbarP31" />
 
     <Button
         android:id="@+id/button4_finalizar"
@@ -241,4 +243,85 @@
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/F1PA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP31"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toEndOf="@+id/text21"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <ImageButton
+        android:id="@+id/F2PA"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP32"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text22"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <ImageButton
+        android:id="@+id/F3PA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP33"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text23"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <ImageButton
+        android:id="@+id/F4PA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP34"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text24"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <ImageButton
+        android:id="@+id/F5PA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP35"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toEndOf="@+id/text25"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <ImageButton
+        android:id="@+id/F6PA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP36"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/text3"
+        tools:layout_editor_absoluteY="494dp" />
+
+    <ImageButton
+        android:id="@+id/F7PA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP37"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toEndOf="@+id/text4"
+        tools:layout_editor_absoluteY="548dp" />
+
+    <ImageButton
+        android:id="@+id/F8PA"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintEnd_toStartOf="@+id/seekbarP38"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text26"
+        tools:layout_editor_absoluteY="600dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

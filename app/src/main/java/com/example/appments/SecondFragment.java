@@ -1,9 +1,13 @@
 package com.example.appments;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -43,6 +47,7 @@ public class SecondFragment extends Fragment {
 
 
 
+    @SuppressLint("WrongViewCast")
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
@@ -217,8 +222,160 @@ public class SecondFragment extends Fragment {
             }
 
         });
+        view.findViewById(R.id.F1PQ).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    AlertDialog.Builder factor1 = new AlertDialog.Builder(getContext());
+                    factor1.setMessage("1: <30 \n 2: 31-60 \n 3: 61-120 \n 4: 121-180 \n 5: >180")
+                            .setCancelable(false)
+                            .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
 
+                                    dialog.cancel();
+                                }
+                            });
+                    AlertDialog titulo = factor1.create();
+                    titulo.setTitle("Tiempo quirófano (min)");
+                    titulo.show();
 
+                }
+
+            });
+
+        view.findViewById(R.id.F2PQ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor2 = new AlertDialog.Builder(getContext());
+                factor2.setMessage("1: Ambulatoria \n 2: <23 h \n 3: 24-48 h \n 4: 2-3 d \n 5: >3 d")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor2.create();
+                titulo.setTitle("Duración de hospitalización");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F3PQ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor3 = new AlertDialog.Builder(getContext());
+                factor3.setMessage("1: Improbable \n 2: <5 \n 3: 5-10 \n 4: 11-25 \n 5: >25")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor3.create();
+                titulo.setTitle("Necesidad UCI (%)");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F4PQ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor4 = new AlertDialog.Builder(getContext());
+                factor4.setMessage("1: < 100 \n 2: 100-250 \n 3: 250-500 \n 4: 500-750 \n 5: >750")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor4.create();
+                titulo.setTitle("Pérdida sanguínea anticipada (cc)");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F5PQ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor5 = new AlertDialog.Builder(getContext());
+                factor5.setMessage("1: 1 \n 2: 1-5 \n 3: 6-10 \n 4: 11-25 \n 5: >25")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor5.create();
+                titulo.setTitle("Tamaño equipo de cirugía (n)");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F6PQ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor6 = new AlertDialog.Builder(getContext());
+                factor6.setMessage("1: <1 \n " +
+                        "2: 1-5 \n " +
+                        "3: 6-10 \n " +
+                        "4: 11-25 \n " +
+                        "5: >25")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor6.create();
+                titulo.setTitle("Probabilidad de intubación (%)");
+                titulo.show();
+
+            }
+
+        });
+
+        view.findViewById(R.id.F7PQ).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder factor7 = new AlertDialog.Builder(getContext());
+                factor7.setMessage("1: Otro \n " +
+                        "2: Abdominopélvico MI \n " +
+                        "3: cirugía abierta abdominopélvica infraumbilical \n " +
+                        "4: cirugía abierta abdominopélvica supraumbilical \n " +
+                        "5: Oto laringología, cirugía de cabeza o cuello, torácica o gastrointestinal")
+                        .setCancelable(false)
+                        .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog titulo = factor7.create();
+                titulo.setTitle("Sitio quirúrgico");
+                titulo.show();
+
+            }
+
+        });
     }
 
 
